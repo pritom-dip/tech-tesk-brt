@@ -9,8 +9,8 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "lint": "eslint lib --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint lib --ext js,jsx,ts,tsx --fix ** eslint src --ext js,jsx,ts,tsx --fix",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,html}'",
+    "lint:fix": "eslint ./ --ext js,jsx,ts,tsx --fix &&  eslint lib --ext js,jsx,ts,tsx --fix",
+    "format": "prettier --write 'lib/**/*.{js,jsx,ts,tsx,css,html}'",
     "prepare": "husky"
   },
   "dependencies": {
