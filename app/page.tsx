@@ -1,9 +1,9 @@
-'use client'
-
-import useAbsence from '@/lib/hooks/useAbsence'
+import AbsenceList from '@/lib/components/AbsenceList'
 
 export default function Home() {
-  const { data, isLoading, error } = useAbsence()
-  console.log({ isLoading, error, data })
-  return <div className="text-3xl font-bold underline">Hello world</div>
+  return (
+    <main>
+      <AbsenceList />
+    </main>
+  )
 }
