@@ -25,7 +25,8 @@ const Table = ({ absences }: IProps) => {
       {
         accessorKey: 'id',
         header: 'ID',
-        cell: (info: any) => <p>{info.getValue() + 1}</p>
+        cell: (info: any) => <p>{info.getValue() + 1}</p>,
+        enableSorting: false
       },
       {
         accessorKey: 'employee',
@@ -46,7 +47,8 @@ const Table = ({ absences }: IProps) => {
       {
         accessorKey: 'days',
         header: 'Days',
-        cell: (info: any) => <p>{info.getValue()}</p>
+        cell: (info: any) => <p>{info.getValue()}</p>,
+        enableSorting: false
       },
       {
         accessorKey: 'endDate',
@@ -77,7 +79,8 @@ const Table = ({ absences }: IProps) => {
               <Badge color="gray" text="Not approved" />
             )}
           </p>
-        )
+        ),
+        enableSorting: false
       },
       {
         accessorKey: 'conflicts',
@@ -90,7 +93,8 @@ const Table = ({ absences }: IProps) => {
               <Badge color="red" text="No" />
             )}
           </p>
-        )
+        ),
+        enableSorting: false
       }
     ],
     []
