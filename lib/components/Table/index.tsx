@@ -31,7 +31,7 @@ const Table = ({ absences }: IProps) => {
         accessorKey: 'employee',
         header: 'Fullname',
         cell: ({ row }) => (
-          <Link href={`/`}>
+          <Link href={`/absences/${row.original?.employee.id}`}>
             {row.original?.employee.firstName +
               ' ' +
               row.original?.employee.lastName}
@@ -118,7 +118,7 @@ const Table = ({ absences }: IProps) => {
                 <tr>
                   {headerGroup.headers.map((header: any) => (
                     <th
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
                       key={header.id}
                       style={{ width: header.getSize() }}
                     >
