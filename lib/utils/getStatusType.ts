@@ -1,7 +1,7 @@
 export const statusMap: Record<string, string> = {
   SICKNESS: 'Sickness',
-  MEDICAL: 'Annual Leave',
-  ANNUAL_LEAVE: 'Medical'
+  MEDICAL: 'Medical',
+  ANNUAL_LEAVE: 'Annual Leave'
 }
 
 const getStatusType = (status: string) => {
