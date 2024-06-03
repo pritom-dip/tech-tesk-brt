@@ -45,3 +45,14 @@ In the project root directory, run:
 ### `yarn start`
 
 Open [http://localhost:3000](http://localhost:3000) to view the frontend in your browser.
+
+Run Test:
+
+### `yarn start`
+
+## <b>Note:</b> If you encounter issues while running the tests, it is recommended to delete the node_modules directory and the yarn.lock file, then reinstall the dependencies. This is due to known issues with the latest version of Next.js. The test setup works perfectly with older versions of Next.js, although the exact cause of the issue remains unidentified.
+
+run
+`rm -rf node_modules yarn.lock`
+then run
+`yarn`
