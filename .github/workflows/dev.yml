@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Dependencies
-        run: npm i
+        run: npm i --no-lockfile
       - name: Check all the tests
         run: npm test
   linters:
@@ -40,7 +40,7 @@ jobs:
 
       - name: Install packages
         run: |
-          yarn install --pure-lockfile
+          yarn install --no-lockfile
 
       - name: Linters
         run: yarn lint-staged
